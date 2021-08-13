@@ -1,0 +1,88 @@
+h1 {
+    text-align: center;
+}
+.hotels-title {
+    font-size: 3em;
+    text-align: center;
+    text-decoration: underline blueviolet;
+    padding: 40px;
+}
+.hotels-container {
+    text-align: center;
+    border: 0%;
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#sidebar {
+    height: 100vh;
+    width: 175px;
+    float: left;
+    color: blueviolet;
+    background-color: black;
+    text-align: center;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 5px 0px;
+}
+.stars {
+    height: 50px;
+    width: 50px;
+}
+.hotel-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+    border: solid 2px blueviolet;
+    margin-bottom: 40px;
+    border-radius: 10px;
+}
+.hotel-name {
+    color: blueviolet;
+}
+.hotel-image {
+    height: 150px;
+    width: 150px;
+}
+.hotel-facilities {
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: dotted 1px black;
+}
+.facility {
+    margin: 5px;
+}
+.hotel-rooms {
+    position: absolute;
+    background-color: white;
+    width: 310px;
+}
+.room-card {
+    border: solid 1px steelblue;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+}
+.btn-small {
+    width: 120px;
+    height: 50px;
+    cursor: pointer;
+    color: white;
+    background-color: steelblue;
+    border-radius: 50px;
+    border-color: white;
+    margin: 20px;
+    font-size: 1em;
+}
+.btn-small:hover {
+    color: blueviolet;
+    background-color: white;
+}

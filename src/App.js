@@ -1,25 +1,30 @@
-import logo from './logo.svg';
+import React from 'react';
+import Navbar from './components/Navbar';
+import Hotels from './components/Hotels';
+import Apartments from './components/Apartments';
+import { Switch, Route } from 'react-router-dom';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      //data: accommodation,
+    };
+  }
+
+
+  render() {
+    return (
+      <div className="app">
+        <Navbar />
+        <Switch>
+          <Route exact path="/" component={Hotels} />
+          <Route exact path="/apartments" component={Apartments} />
+        </Switch>
+      </div>
+    );
+  }
 }
 
 export default App;

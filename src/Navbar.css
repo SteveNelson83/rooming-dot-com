@@ -1,0 +1,35 @@
+.navBar {
+    background-color: blueviolet;
+}
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.snowboarder {
+    height: 180px;
+    width: 180px;
+}
+#sitename {
+    font-size: 500%;
+    color: white;
+}
+.nav {
+    display: flex;
+    justify-content: center;
+}
+.btn {
+    width: 240px;
+    height: 50px;
+    cursor: pointer;
+    color: white;
+    background-color: steelblue;
+    border-radius: 50px;
+    border-color: black;
+    margin: 20px;
+    font-size: 2em;
+}
+.btn:hover {
+    color: blueviolet;
+    background-color: black;
+}
